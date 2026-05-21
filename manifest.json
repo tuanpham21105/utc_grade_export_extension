@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "UTC Grade Export",
+  "version": "1.0.0",
+  "description": "Xuất bảng điểm UTC thành PDF",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://qldt.utc.edu.vn/congthongtin/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
